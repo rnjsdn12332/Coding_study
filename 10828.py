@@ -1,5 +1,4 @@
-import sys
-
+import sys #시간 초과 문제 해결
 
 class Stack1 :
     def __init__(self, size) :
@@ -31,7 +30,8 @@ class Stack1 :
         else :
 
             print(self.arr[self.last_index-1])
-input=sys.stdin.readline
+            
+input=sys.stdin.readline #이 부분 추가
 s=int(input())
 
 st=Stack1(s)
