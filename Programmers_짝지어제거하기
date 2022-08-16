@@ -1,0 +1,13 @@
+from collections import deque
+def solution(s):
+    q=deque()
+    for i in s :
+        if not q or q[-1]!=i :
+            q.append(i)
+        else :
+            q.pop()
+            
+    if q :
+        return 0
+    else :
+        return 1
