@@ -5,11 +5,11 @@ number=input()
 cnt=0
 
 #주어진 숫자까지 1부터 차례대로 반복문
-for num in range(1,int(number)+1) :
+for n in range(1,int(number)+1) :
     #3, 6, 9 들어가있을때
-    if "3" in str(num) or "6" in str(num) or "9" in str(num) :
-        #카운트 셈
-
-        cnt+=1
+    for num in str(n) :
+        if "3" in num or "6" in num or "9" in num :
+            #카운트 셈
+            cnt+=1
 
 print(cnt)
